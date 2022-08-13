@@ -1,21 +1,7 @@
-# ENGSCI233: Lab - Sampled Data
-# sdlab_functions.py
-
-# PURPOSE:
-# To IMPLEMENT cubic spline interpolation.
-
-# PREPARATION:
-# Notebook sampling.ipynb, ESPECIALLY Section 1.3.1 theory of cubic splines.
-
-# SUBMISSION:
-# - YOU MUST submit this file to complete the lab. 
-# - DO NOT change the file name.
-
 # TO DO:
 # - COMPLETE the functions spline_coefficient_matrix(), spline_rhs() and spline_interpolation().
 # - COMPLETE the docstrings for each of these functions.
 # - TEST each method is working correctly by passing the asserts in sdlab_practice.py.
-# - DO NOT modify the other functions.
 
 import numpy as np
 
