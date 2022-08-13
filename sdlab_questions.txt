@@ -1,0 +1,40 @@
+# QUESTION 1:
+# Your goal was to produce a plot of NET MASS CHANGE over time. Describe why this could not
+# be done without some sort of INTERPOLATION?
+
+# ANSWER 1:
+# The 3 given data sets had production/injection values taken from different points in time.
+# Therefore, several data points were missing in some data sets so the initial data sets couldn't be added together
+# to give an accurate picture of the net mass change RATE over time. Consequently, the data sets were fitted
+# with a cubic spline and the time values that didn't have corresponding y-axis values were found using interpolation.
+# This allowed every time value of interest (monthly intervals) to have 3 different corresponding y-axis values
+# (2 values for production rate and 1 value for injection rate) so they can all be added together to obtain an accurate
+# picture of the net mass change RATE over time. Without interpolation, there would be many missing data points over
+# time and an inaccurate figure would have been obtained.
+
+# QUESTION 2:
+# Your goal was to produce a plot of NET MASS CHANGE over time. Describe why this could not
+# be done without some sort of numerical INTEGRATION?
+
+# ANSWER 2:
+# The provided data was the contained numbers corresponding to the net mass change RATE over time. This is the
+# derivative of net mass change over time. Therefore, to figure out the total amount of mass that has been removed or
+# added over time, integration was needed to obtain the cumulative sum quantities of the net mass changes over time.
+# Without integration, there was only data on how fast mass was being added/removed from the ground. There was no
+# data on the physical amounts of mass that has been added/removed over time which is the required quantity for a plot
+# of net mass change over time. Hence, integration was crucial for this task.
+
+# QUESTION 3:
+# Could the operator of the field be considered responsible for the earthquakes?
+
+# ANSWER 3:
+# The first earthquake occurred halfway through 2003, which is not long after the net mass change within
+# the ground becomes positive. Another two earthquakes strike halfway through 2004 and at the start of 2005 respectively.
+# This is not long after the first earthquake and is very close to the peak of the net mass change. Even though injection
+# started 10 years prior to the first earthquake, there was always a negative net mass change within the ground (less mass
+# than what there was at the start) over the first 10 years of injections. However, 10 years later, as soon as the
+# net mass change becomes positive for the first time, the earthquakes strike. It appears that the first 10 years of
+# injections without earthquakes was simply a lag period until the net mass change became positive. This suggests there
+# is a strong correlation between positive net mass change and earthquakes. Since positive net mass changes can
+# only occur due to the operator's injections, there is a high chance that the field operator is responsible for the
+# earthquakes.
